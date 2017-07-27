@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="defaultApp.jnlp">
+  <information>
+    <title>defaultApp</title>
+    <vendor>leemartinc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="defaultApp.jar" size="6487" download="eager" />
+    <jar href="lib/jfoenix.jar" size="2375703" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="defaultApp" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="defaultapp.DefaultApp"  name="defaultApp" />
+  <update check="always"/>
+</jnlp>

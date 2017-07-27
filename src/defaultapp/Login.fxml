@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="defaultapp.LoginController">
+   <children>
+      <JFXTextField fx:id="username" focusColor="#18b8ee" layoutX="137.0" layoutY="98.0" prefHeight="43.0" prefWidth="326.0" promptText="Username" unFocusColor="#221c9d" />
+      <JFXPasswordField fx:id="password" focusColor="#18b8ee" layoutX="137.0" layoutY="181.0" prefHeight="43.0" prefWidth="326.0" promptText="Password" unFocusColor="#221c9d" />
+      <JFXButton fx:id="login" buttonType="RAISED" layoutX="95.0" layoutY="275.0" onAction="#Login" prefHeight="43.0" prefWidth="158.0" ripplerFill="WHITE" style="-fx-background-color: #18b8ee;" text="Login" textFill="WHITE" />
+      <JFXButton fx:id="signup" buttonType="RAISED" layoutX="359.0" layoutY="275.0" onAction="#Signup" prefHeight="43.0" prefWidth="158.0" ripplerFill="WHITE" style="-fx-background-color: #18b8ee;" text="Sign Up" textFill="WHITE" />
+      <JFXButton fx:id="exit" layoutX="543.0" layoutY="361.0" onAction="#Exit" style="-fx-background-color: red;" text="Exit" textFill="WHITE" />
+      <Label fx:id="wrong" layoutX="187.0" layoutY="244.0" text="Username or Password is incorrect!" textFill="RED" />
+   </children>
+</Pane>
